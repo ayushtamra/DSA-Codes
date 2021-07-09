@@ -1,27 +1,27 @@
-// #include<bits/stdc++.h>
-// using namespace std;
+#include<bits/stdc++.h>
+using namespace std;
 
-// int rotation(int arr[], int d, int n)
-// {
-//     int a[d];
-//     for(int i=0;i<d;i++)
-//     {
-//         a[i] = arr[i];
-//     }
-//     for(int i=0;i<n-d;i++)
-//     {
-//         arr[i] = arr[i+d];
-//     }
-//     for(int i=0;i<d;i++)
-//     {
-//         arr[n-d+i] = a[i];
-//     }
-//     for(int i=0;i<n;i++)
-//     {
-//         cout<<arr[i]<<" ";
-//     }
-//     return 0;
-// }
+int rotation(int arr[], int d, int n)
+{
+    int a[d];
+    for(int i=0;i<d;i++)
+    {
+        a[i] = arr[i];
+    }
+    for(int i=0;i<n-d;i++)
+    {
+        arr[i] = arr[i+d];
+    }
+    for(int i=0;i<d;i++)
+    {
+        arr[n-d+i] = a[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
 
 // int main(int argc, char const *argv[])
 // {
