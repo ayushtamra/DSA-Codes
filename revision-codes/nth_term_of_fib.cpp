@@ -4,13 +4,11 @@
 // using namespace std;
 // int fib(int n)
 // {
-//     static int result;
 //     if(n==1||n==2)
 //     {
 //         return 1;
 //     }
-//     result= fib(n-1)+fib(n-2);
-//     return result;
+//     return fib(n-1)+fib(n-2);
 // }
 // int main()
 // {
@@ -49,23 +47,23 @@
 
 //bottom up approach O(n)
 
-#include<bits/stdc++.h>
-using namespace std;
-int fib(int n)
-{
-    int a=1,b=1,i,s;
-    for(i=0;i<n;i++)
-    {
-        s=a;
-        a=a+b;
-        b=s;
-    }
-    cout<<b;
-    return 0;
-}
-int main()
-{
-    int n;
-    cin>>n;
-    cout<<fib(n);
-}
+// #include<bits/stdc++.h>
+// using namespace std;
+// int fib(int n)
+// {
+//     int a=1,b=1,i,s;
+//     for(i=0;i<n;i++)
+//     {
+//         s=a;
+//         a=a+b;
+//         b=s;
+//     }
+//     cout<<b;
+//     return 0;
+// }
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     cout<<fib(n);
+// }
